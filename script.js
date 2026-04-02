@@ -19,3 +19,23 @@ document.getElementById("bookingForm").addEventListener("submit", function(e) {
         document.getElementById("msg").innerText = data.message;
     });
 });
+function loadBookings() {
+    fetch("https://locly-backend.onrender.com/bookings")
+    .then(res => res.json())
+    .then(data => {
+        let output = "";
+
+        data.forEach(item => {
+            output += `
+                <p>
+                    ${item.name} - ${item.location} - ${item.date}
+                </p>
+            `;
+        });
+
+        document.getElementById("bookingsList").innerHTML = output;
+    });
+}
+
+// call it when page loads
+loadBookings();
