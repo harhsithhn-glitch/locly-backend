@@ -1,90 +1,90 @@
+/* GLOBAL */
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background: #f9f9f9;
-    color: #111;
-}
-
-/* NAVBAR */
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    background: #000;
-    color: white;
-    position: sticky;
-    top: 0;
-}
-
-/* HERO */
-.hero {
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(135deg, #000, #333);
-    color: white;
+    background: #f4f6f9;
+    color: #333;
     text-align: center;
 }
 
-.hero h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    opacity: 0.8;
-}
-
-/* BUTTON */
-.btn {
-    margin-top: 20px;
-    padding: 12px 30px;
-    background: #007bff;
+/* HEADINGS */
+h1 {
+    background: #111;
     color: white;
-    border-radius: 30px;
-    text-decoration: none;
-    transition: 0.3s;
+    padding: 20px;
+    margin: 0;
 }
 
-.btn:hover {
-    background: #0056b3;
+h2 {
+    margin-top: 30px;
+    color: #222;
 }
 
-/* SECTIONS */
-.services, .guides, .book {
-    padding: 80px 20px;
-}
-
-/* CARDS */
-.cards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.card {
-    background: white;
-    padding: 25px;
-    border-radius: 15px;
-    width: 220px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-form input {
+/* INPUTS */
+input {
+    display: block;
+    margin: 10px auto;
     padding: 10px;
     width: 250px;
     border-radius: 8px;
     border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
 }
 
-form button {
+input:focus {
+    border-color: #007bff;
+}
+
+/* BUTTONS */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #007bff;
+    color: white;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* SECTIONS */
+form, .section {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    width: 320px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* MESSAGES */
+p {
+    font-weight: bold;
+    color: green;
+}
+
+/* BOOKINGS LIST */
+#bookingsList {
+    margin-top: 20px;
+}
+
+#bookingsList p {
+    background: white;
+    padding: 10px;
+    margin: 8px auto;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* DIVIDER */
+hr {
+    margin: 30px;
+    border: 0;
+    height: 1px;
+    background: #ddd;
 }
