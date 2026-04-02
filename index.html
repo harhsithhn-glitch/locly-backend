@@ -1,70 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
     <title>LOCLY</title>
-    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<!-- NAVBAR -->
-<nav>
-    <h2>LOCLY</h2>
-    <a href="#book" class="btn">Book Now</a>
-</nav>
+<h1>Explore Mumbai with Local Guides</h1>
 
-<!-- HERO -->
-<section class="hero">
-    <h1>Explore Mumbai with Local Guides</h1>
-    <p>Authentic experiences with verified locals</p>
-    <a href="https://wa.me/916363540957" class="btn">Book on WhatsApp</a>
-</section>
+<!-- 🔐 LOGIN (DEMO) -->
+<h2>Login</h2>
+<input type="text" id="phone" placeholder="Enter phone">
+<button onclick="login()">Login</button>
+<p id="loginStatus"></p>
 
-<!-- SERVICES -->
-<section class="services">
-    <h2>Experiences</h2>
-    <div class="cards">
-        <div class="card">Street Food Tour 🍜</div>
-        <div class="card">Hidden Places 🏙</div>
-        <div class="card">Cultural Tour 🏛</div>
-        <div class="card">Sunrise Spots 🌅</div>
-    </div>
-</section>
+<hr>
 
-<!-- GUIDES -->
-<section class="guides">
-    <h2>Our Guides</h2>
-    <div class="cards">
-        <div class="card">
-            <h3>Ravi</h3>
-            <p>English, Hindi</p>
-            <p>5 years experience</p>
-        </div>
-        <div class="card">
-            <h3>Aman</h3>
-            <p>English</p>
-            <p>3 years experience</p>
-        </div>
-    </div>
-</section>
+<!-- 👤 PROFILE -->
+<h2>User Profile</h2>
+<input type="text" id="uname" placeholder="Name">
+<input type="date" id="dob">
+<input type="number" id="age" placeholder="Age">
+<input type="text" id="gender" placeholder="Gender">
+<input type="email" id="email" placeholder="Email">
+<input type="text" id="address" placeholder="Address">
+<input type="text" id="emergency" placeholder="Emergency Contact">
 
-<!-- BOOK -->
-<section id="book" class="book">
-    <h2>Book Your Guide</h2>
+<button onclick="saveUser()">Save Profile</button>
 
-    <form id="bookingForm">
-        <input type="text" id="name" placeholder="Your Name" required><br><br>
-        <input type="text" id="location" placeholder="Location" required><br><br>
-        <input type="date" id="date" required><br><br>
+<p id="userMsg"></p>
 
-        <button type="submit" class="btn">Submit</button>
-    </form>
+<hr>
 
-    <p id="msg"></p>
-</section>
-  <h2>Bookings</h2>
-    <div id="bookingsList"></div>
+<!-- 📅 BOOKING FORM -->
+<h2>Book Now</h2>
+
+<form id="bookingForm">
+    <input type="text" id="name" placeholder="Enter name" required>
+    <input type="text" id="location" placeholder="Enter location" required>
+    <input type="date" id="date" required>
+    <button type="submit">Book</button>
+</form>
+
+<p id="msg"></p>
+
+<hr>
+
+<!-- 📋 BOOKINGS LIST -->
+<h2>Bookings</h2>
+<div id="bookingsList"></div>
 
 <script src="script.js"></script>
 
