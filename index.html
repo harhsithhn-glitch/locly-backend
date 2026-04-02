@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LOCLY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h2>LOCLY</h2>
+    <a href="#book" class="btn">Book Now</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Explore Mumbai with Local Guides</h1>
+    <p>Authentic experiences with verified locals</p>
+    <a href="https://wa.me/916363540957" class="btn">Book on WhatsApp</a>
+</section>
+
+<!-- SERVICES -->
+<section class="services">
+    <h2>Experiences</h2>
+    <div class="cards">
+        <div class="card">Street Food Tour 🍜</div>
+        <div class="card">Hidden Places 🏙</div>
+        <div class="card">Cultural Tour 🏛</div>
+        <div class="card">Sunrise Spots 🌅</div>
+    </div>
+</section>
+
+<!-- GUIDES -->
+<section class="guides">
+    <h2>Our Guides</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Ravi</h3>
+            <p>English, Hindi</p>
+            <p>5 years experience</p>
+        </div>
+        <div class="card">
+            <h3>Aman</h3>
+            <p>English</p>
+            <p>3 years experience</p>
+        </div>
+    </div>
+</section>
+
+<!-- BOOK -->
+<section id="book" class="book">
+    <h2>Book Your Guide</h2>
+
+    <form id="bookingForm">
+        <input type="text" id="name" placeholder="Your Name" required><br><br>
+        <input type="text" id="location" placeholder="Location" required><br><br>
+        <input type="date" id="date" required><br><br>
+
+        <button type="submit" class="btn">Submit</button>
+    </form>
+
+    <p id="msg"></p>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
