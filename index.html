@@ -2,20 +2,25 @@
 <html>
 <head>
     <title>LOCLY</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Razorpay -->
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 </head>
+
 <body>
 
-<h1>Explore Mumbai with Local Guides</h1>
+<h1>LOCLY</h1>
 
-<!-- 🔐 LOGIN (DEMO) -->
+<!-- LOGIN -->
 <h2>Login</h2>
-<input type="text" id="phone" placeholder="Enter phone">
+<input type="text" id="phone" placeholder="Phone Number">
 <button onclick="login()">Login</button>
 <p id="loginStatus"></p>
 
 <hr>
 
-<!-- 👤 PROFILE -->
+<!-- PROFILE -->
 <h2>User Profile</h2>
 <input type="text" id="uname" placeholder="Name">
 <input type="date" id="dob">
@@ -26,26 +31,25 @@
 <input type="text" id="emergency" placeholder="Emergency Contact">
 
 <button onclick="saveUser()">Save Profile</button>
-
 <p id="userMsg"></p>
 
 <hr>
 
-<!-- 📅 BOOKING FORM -->
-<h2>Book Now</h2>
-
+<!-- BOOKING -->
+<h2>Book Guide</h2>
 <form id="bookingForm">
-    <input type="text" id="name" placeholder="Enter name" required>
-    <input type="text" id="location" placeholder="Enter location" required>
+    <input type="text" id="name" placeholder="Name" required>
+    <input type="text" id="location" placeholder="Location" required>
     <input type="date" id="date" required>
-    <button type="submit">Book</button>
+
+    <button type="button" onclick="payNow()">Pay & Book</button>
 </form>
 
 <p id="msg"></p>
 
 <hr>
 
-<!-- 📋 BOOKINGS LIST -->
+<!-- BOOKINGS -->
 <h2>Bookings</h2>
 <div id="bookingsList"></div>
 
